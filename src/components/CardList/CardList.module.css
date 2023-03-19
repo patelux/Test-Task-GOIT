@@ -1,0 +1,93 @@
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0px 80px 36px 80px;
+  color: #373737;
+}
+.cardList{
+  margin: 0;
+  padding: 0;
+}
+.cardItem {
+  
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+}
+
+.avatar{
+  width: 80px;
+  height: 80px;
+
+  border-style: none;
+ 
+  border-radius: 50%;
+
+  margin-bottom: 24px;
+}
+
+.cardInfoBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  
+
+}
+.cardInfoBox:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.cardContent{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-transform: uppercase;
+ 
+  color: #EBD8FF;
+
+  margin: 0;
+}
+
+.btnSubmit {
+  width: 196px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 56px;
+
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #373737;
+  background-color:  #EBD8FF;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  text-transform: uppercase;
+
+  box-shadow:  0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-style: none;
+  border-radius: 10px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btnSubmit:hover, .btnSubmit:focus {
+    box-shadow: 0px 4px 4px rgba(235, 216, 255, 0.3);
+}
+.btnSubmit.active {
+    background-color:  #5CD3A8;
+}

@@ -4,15 +4,13 @@
   "private": true,
   "homepage": "https://patelux.github.io/test-task-GOIT/",
   "dependencies": {
-    "@chakra-ui/react": "^2.4.9",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "framer-motion": "^9.0.2",
+  
     "modern-normalize": "^1.1.0",
-    "nanoid": "^4.0.1",
+   
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",

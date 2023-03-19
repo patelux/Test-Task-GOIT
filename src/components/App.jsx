@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import storage from '../helpers/storage';
-import css from '../index.css';
+import { CardList } from '../components/CardList/CardList';
+import logo from '../components/images/Logo.png';
+import css from './App.module.css';
 
 export function App () {
 
@@ -8,11 +10,9 @@ const [currentState, setCurrentState] = useState(()=>storage.load('currentState'
 const [followersCounter, setFollowersCounter] = useState(()=>storage.load('followersCounter') ?? 100500);
 
 const toggleCounterState = () => {
-console.log("before click", currentState)
 setCurrentState(!currentState);
 setFollowersCounter((!currentState) ? (followersCounter + 1) : (followersCounter) - 1);
 };
-
 
 useEffect(() => {
   storage.save('currentState', currentState); 
@@ -21,18 +21,15 @@ useEffect(() => {
 
     return (
     <>
-        <div>
-          <ul>
-            <li>
-              <p>followers</p>
-              <p>{followersCounter}</p>
-            </li>
-          </ul>
-          <button className={css.btnSubmit} type='button' onClick={toggleCounterState}>add</button>
+        <div className={css.cardContainer}>
+        <img
+          src={logo}
+          alt="logo"
+          className={css.logo}
+          />
+          <CardList currentState={currentState} followersCounter={followersCounter} toggleCounterState={toggleCounterState} />
         </div>
-
     </>
     );
 }
 
-/* <div className={currentState ? [css.btnSubmit, css.active].join(' ') : css.btnSubmit}> */

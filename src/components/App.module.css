@@ -1,0 +1,27 @@
+.cardContainer {
+    width: 380px;
+    height: 460px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: -2.6px 6.8px 20.6x rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+    background-image: 
+    url('../components/images/rectangle_2x.png'),
+    url('../components/images/picture_bg_2_2x.png'),
+    linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+    background-repeat: no-repeat;
+    background-position: top 212px left 0, top 28px left 36px, top 0 left 0;
+    background-size: 460px 16px, 308px 168px, 380px 460px;
+
+    margin: 20px auto;
+}
+
+.logo {
+    width: 76px;
+    height: 22px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 136px;
+}
