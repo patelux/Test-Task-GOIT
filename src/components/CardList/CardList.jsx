@@ -8,11 +8,13 @@ export function CardList({ currentState, followersCounter, toggleCounterState })
     <div className={css.cardBox}>
       <ul className={css.cardList}>
         <li className={css.cardItem}>
+        <div className={css.avatar}>
         <img
           src={avatar}
           alt="avatar"
-          className={css.avatar}
+          className={css.avatarImg}
           />
+        </div>
           <div className={css.cardInfoBox}>
           <p className={css.cardContent}>777</p>
           <p className={css.cardContent}>tweets</p>
