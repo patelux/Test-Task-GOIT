@@ -49,7 +49,7 @@
 
 .avatar::before{
 
-  content: ' ';
+  content: '';
   width: 156px;
   height: 8px;
   background-color:#EBD8FF;
@@ -60,7 +60,7 @@
 }
 .avatar::after{
 
-    content: ' ';
+    content: '';
     width: 156px;
     height: 8px;
     background-color: #EBD8FF;
